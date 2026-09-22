@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F6F1E6" />
+    <meta name="description" content="Kaizen turns big subjects into clear facts, focused drills, and rewarding challenges—one small improvement at a time." />
+    <title>Kaizen — Learn a little. Improve every day.</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23C73E26'/%3E%3Cpath d='M18 14h10v16l13-16h12L37 32l17 18H41L28 34v16H18z' fill='%23fff'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Kaizen home">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span class="brand-name">Kaizen</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#categories">Categories</a>
+        <a href="#kaizen-method">The Kaizen method</a>
+        <a href="contact/">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Progress that actually sticks</div>
+          <h1>Learn a little.<br /><span>Improve every day.</span></h1>
+          <p class="hero-lede">Kaizen turns big subjects into small, focused steps. Meet an idea, practise it, prove it—then keep moving.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="contact/">Talk to us <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="trust-row" aria-label="Learning benefits">
+            <span><b>01</b> Clear steps</span>
+            <span><b>02</b> Active recall</span>
+            <span><b>03</b> Visible progress</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="A Kaizen learning path showing Fact, Drill, and Challenge">
+          <div class="path-card">
+            <div class="path-topline">
+              <div>
+                <span class="micro-label">TODAY'S PATH</span>
+                <strong>Motion &amp; Forces</strong>
+              </div>
+              <span class="streak-pill">✦ 7 day streak</span>
+            </div>
+            <div class="progress-track" aria-label="Two of three stages complete"><span></span></div>
+            <div class="path-line" aria-hidden="true"></div>
+            <article class="lesson-node complete node-left">
+              <div class="node-icon">✓</div>
+              <div><span>FACT</span><strong>Meet the idea</strong><small>Short, clear explanation</small></div>
+            </article>
+            <article class="lesson-node active node-right">
+              <div class="node-icon">D</div>
+              <div><span>DRILL</span><strong>Make it stick</strong><small>Focused practice</small></div>
+              <i class="you-are-here">YOU ARE HERE</i>
+            </article>
+            <article class="lesson-node node-left">
+              <div class="node-icon">C</div>
+              <div><span>CHALLENGE</span><strong>Put it together</strong><small>Apply what you know</small></div>
+            </article>
+            <div class="path-reward"><span>★</span> Small wins build momentum</div>
+          </div>
+          <div class="float-chip chip-one">+1% today</div>
+          <div class="float-chip chip-two">3 steps · one level</div>
+        </div>
+      </section>
+
+      <section class="meaning-band" id="kaizen-method">
+        <div class="section-shell meaning-grid">
+          <div class="meaning-copy reveal">
+            <span class="section-kicker">改善 · KAIZEN</span>
+            <h2>Change for the better,<br />one day at a time.</h2>
+            <p><strong>Kaizen</strong> is the Japanese idea of continuous improvement. The goal is not one giant leap. It is one useful step, repeated.</p>
+            <p class="meaning-note">Move the day counter. Watch what a steady 1% can become.</p>
+          </div>
+
+          <div class="compound-card reveal" data-compound-card>
+            <div class="compound-header">
+              <div><span class="micro-label">YOUR 1% EFFECT</span><strong><span data-days-output>30</span> days of showing up</strong></div>
+              <div class="compound-total"><span data-growth-output>1.35×</span><small>starting point</small></div>
+            </div>
+            <div class="growth-chart" data-growth-chart aria-label="Growth chart for one percent daily improvement"></div>
+            <label class="range-label" for="days-range">
+              <span>Day 1</span><span>Day 365</span>
+            </label>
+            <input id="days-range" class="days-range" type="range" min="1" max="365" value="30" aria-label="Number of days improving by one percent" />
+            <div class="compound-insight">
+              <span class="insight-mark">↗</span>
+              <p>At 1% better each day, small gains compound to <strong data-growth-sentence>about 1.35×</strong> your starting point.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning section-shell" id="how-it-works">
+        <div class="section-heading reveal">
+          <span class="section-kicker">THE LEARNING LOOP</span>
+          <h2>Three steps. Deeper understanding.</h2>
+          <p>Each level moves from clarity to confidence—without dropping you into a wall of questions.</p>
+        </div>
+
+        <div class="stage-explorer reveal">
+          <div class="stage-tabs" role="tablist" aria-label="Learning stages">
+            <button class="stage-tab is-active" id="tab-fact" role="tab" aria-selected="true" aria-controls="panel-stage" data-stage="fact"><span>F</span> Fact</button>
+            <button class="stage-tab" id="tab-drill" role="tab" aria-selected="false" aria-controls="panel-stage" data-stage="drill"><span>D</span> Drill</button>
+            <button class="stage-tab" id="tab-challenge" role="tab" aria-selected="false" aria-controls="panel-stage" data-stage="challenge"><span>C</span> Challenge</button>
+          </div>
+          <div class="stage-panel" id="panel-stage" role="tabpanel" aria-labelledby="tab-fact">
+            <div class="stage-number" data-stage-number>01</div>
+            <div class="stage-copy">
+              <span class="stage-label" data-stage-label>FACT · UNDERSTAND</span>
+              <h3 data-stage-title>Start with one clear idea.</h3>
+              <p data-stage-body>Short teaching cards explain the point in plain language, with the detail you need and none of the noise.</p>
+              <ul data-stage-list>
+                <li>Small, focused explanations</li>
+                <li>Visuals and examples in context</li>
+                <li>A quick check before moving on</li>
+              </ul>
+            </div>
+            <div class="stage-demo fact-demo" data-stage-demo aria-hidden="true">
+              <span class="demo-tag">FACT 1/4</span>
+              <div class="speech-card">
+                <b>Speed tells us how fast distance changes.</b>
+                <p>Find it by dividing distance by time.</p>
+                <div class="formula">speed = distance ÷ time</div>
+              </div>
+              <button type="button" tabindex="-1">Got it</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="progressive-section">
+        <div class="section-shell progressive-grid">
+          <div class="progressive-visual reveal" aria-label="Progressive learning path from foundations to mastery">
+            <div class="route-line"></div>
+            <div class="route-step route-one"><span>1</span><div><small>FOUNDATION</small><b>Know the idea</b></div></div>
+            <div class="route-step route-two"><span>2</span><div><small>RECALL</small><b>Retrieve it</b></div></div>
+            <div class="route-step route-three"><span>3</span><div><small>APPLICATION</small><b>Use it</b></div></div>
+            <div class="route-step route-four"><span>★</span><div><small>MASTERY</small><b>Own the skill</b></div></div>
+          </div>
+          <div class="progressive-copy reveal">
+            <span class="section-kicker">PROGRESSIVE LEARNING</span>
+            <h2>The next step is always within reach.</h2>
+            <p>Kaizen sequences learning so each new level rests on something you already understand. Familiar ideas return in new forms, turning memory into flexible skill.</p>
+            <div class="principle-list">
+              <div><span>↗</span><p><strong>Build gradually</strong><br />Complex topics are broken into clear levels.</p></div>
+              <div><span>⟳</span><p><strong>Revisit deliberately</strong><br />Useful repetition appears at the right moment.</p></div>
+              <div><span>✓</span><p><strong>See the progress</strong><br />Every finished step makes momentum visible.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section-shell" id="categories">
+        <div class="section-heading reveal">
+          <span class="section-kicker">LEARNING FOR EVERY STAGE</span>
+          <h2>Choose your path.</h2>
+          <p>School programmes, exam preparation, university topics, and knowledge worth keeping.</p>
+        </div>
+        <div class="category-grid">
+          <article class="category-card category-wide reveal" style="--category:#C73E26; --category-soft:rgba(199,62,38,.10)">
+            <span class="category-icon">🎓</span><div><small>EXAM PATH</small><h3>IGCSE</h3><p>Focused coverage for Cambridge International GCSE subjects.</p></div><span class="category-arrow">↗</span>
+          </article>
+          <article class="category-card reveal" style="--category:#2D4A78; --category-soft:rgba(45,74,120,.10)">
+            <span class="category-icon">🇺🇸</span><div><small>SCHOOL PATH</small><h3>American Diploma</h3><p>Core subjects and exam preparation.</p></div>
+          </article>
+          <article class="category-card reveal" style="--category:#2E8B6F; --category-soft:rgba(46,139,111,.10)">
+            <span class="category-icon">🏛️</span><div><small>NATIONAL PATH</small><h3>Thanwya Amma</h3><p>Structured learning for Egypt's secondary certificate.</p></div>
+          </article>
+          <article class="category-card reveal" style="--category:#C77B2B; --category-soft:rgba(199,123,43,.11)">
+            <span class="category-icon">🌱</span><div><small>AGES 6–11</small><h3>Primary School</h3><p>Strong foundations through short, friendly levels.</p></div>
+          </article>
+          <article class="category-card reveal" style="--category:#5B4A8F; --category-soft:rgba(91,74,143,.10)">
+            <span class="category-icon">📐</span><div><small>AGES 11–14</small><h3>Secondary School</h3><p>Core skills that bridge foundations and exams.</p></div>
+          </article>
+          <article class="category-card reveal" style="--category:#27566B; --category-soft:rgba(39,86,107,.10)">
+            <span class="category-icon">🌍</span><div><small>EVERYDAY LEARNING</small><h3>General Knowledge</h3><p>Bite-size facts, remembered through quick reviews.</p></div>
+          </article>
+          <article class="category-card reveal" style="--category:#3F7A52; --category-soft:rgba(63,122,82,.10)">
+            <span class="category-icon">🧠</span><div><small>HIGHER EDUCATION</small><h3>University</h3><p>Technical topics built for steady understanding.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-cta section-shell reveal">
+        <div>
+          <span class="section-kicker">START THE CONVERSATION</span>
+          <h2>Small step. Real momentum.</h2>
+          <p>Questions, ideas, or want to learn more about Kaizen?</p>
+        </div>
+        <a class="button button-light" href="contact/">Contact us <span aria-hidden="true">↗</span></a>
+        <span class="cta-kanji" aria-hidden="true">改善</span>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kaizen</span></a>
+      <p>Improve a little, every day.</p>
+      <nav aria-label="Footer navigation"><a href="#how-it-works">How it works</a><a href="#categories">Categories</a><a href="contact/">Contact</a></nav>
+      <small>© <span data-year></span> Kaizen. All rights reserved.</small>
+    </footer>
+  </body>
+</html>

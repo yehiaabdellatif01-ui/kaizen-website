@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F6F1E6" />
+    <meta name="description" content="Contact Kaizen by email or WhatsApp." />
+    <title>Contact Kaizen</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23C73E26'/%3E%3Cpath d='M18 14h10v16l13-16h12L37 32l17 18H41L28 34v16H18z' fill='%23fff'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script src="../assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Kaizen home"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kaizen</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="../#how-it-works">How it works</a>
+        <a href="../#categories">Categories</a>
+        <a href="../#kaizen-method">The Kaizen method</a>
+        <a href="./" aria-current="page">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme"><span class="theme-icon" aria-hidden="true">◐</span></button>
+      </nav>
+    </header>
+
+    <main id="main" class="contact-main">
+      <section class="contact-intro section-shell reveal">
+        <a class="back-link" href="../">← Back to home</a>
+        <span class="section-kicker">CONTACT KAIZEN</span>
+        <h1>Let’s make the next<br /><span>1% happen.</span></h1>
+        <p>Have a question, an idea, or feedback? Send a message by email or start a WhatsApp conversation.</p>
+      </section>
+
+      <section class="contact-layout section-shell">
+        <div class="contact-options reveal">
+          <a class="contact-method email-method" href="mailto:yehia.abdellatif01@gmail.com">
+            <span class="method-icon" aria-hidden="true">@</span>
+            <div><small>EMAIL</small><h2>Write to us</h2><p>yehia.abdellatif01@gmail.com</p></div>
+            <span class="method-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-method whatsapp-method" href="https://wa.me/201154001421?text=Hello%20Kaizen%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+            <span class="method-icon" aria-hidden="true">⌁</span>
+            <div><small>WHATSAPP</small><h2>Start a chat</h2><p>+20 115 400 1421</p></div>
+            <span class="method-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-note"><span>改善</span><p><strong>Every conversation can improve something.</strong><br />We read every message.</p></div>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <div class="form-heading"><span class="micro-label">SEND AN EMAIL</span><h2>What’s on your mind?</h2><p>Fill this in and we’ll open your email app with the message ready to send.</p></div>
+          <label for="contact-name">Your name</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="How should we address you?" required />
+          <label for="contact-email">Your email</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject" name="subject">
+            <option value="General question">General question</option>
+            <option value="Feedback about Kaizen">Feedback</option>
+            <option value="Partnership enquiry">Partnership</option>
+            <option value="Support request">Support</option>
+          </select>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="6" placeholder="Tell us how we can help…" required></textarea>
+          <button class="button button-primary form-submit" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kaizen</span></a>
+      <p>Improve a little, every day.</p>
+      <nav aria-label="Footer navigation"><a href="../#how-it-works">How it works</a><a href="../#categories">Categories</a><a href="./">Contact</a></nav>
+      <small>© <span data-year></span> Kaizen. All rights reserved.</small>
+    </footer>
+  </body>
+</html>
