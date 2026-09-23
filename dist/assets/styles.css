@@ -55,6 +55,7 @@ img { max-width: 100%; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--red); }
 .main-nav .nav-store-link { min-height: 40px; padding: 0 15px; display: inline-flex; align-items: center; gap: 8px; border-radius: 10px; background: var(--ink); color: var(--paper); box-shadow: 0 3px 0 var(--ink-soft); }
 .main-nav .nav-store-link:hover { color: var(--paper); transform: translateY(-1px); }
+.apple-logo { width: 15px; height: 19px; flex: 0 0 auto; fill: currentColor; }
 .theme-toggle { border: 1.5px solid var(--line); width: 40px; height: 40px; border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; box-shadow: 0 3px 0 var(--line); }
 .theme-icon { font-size: 18px; }
 .menu-toggle { display: none; width: 42px; height: 42px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--card); padding: 10px; }
@@ -74,7 +75,9 @@ img { max-width: 100%; }
 .button-primary { background: var(--red); color: white; box-shadow: 0 5px 0 var(--red-dark); }
 .button-primary:hover { box-shadow: 0 7px 0 var(--red-dark); }
 .button-quiet { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); box-shadow: 0 4px 0 var(--line); }
-.app-store-button { min-width: 181px; justify-content: space-between; padding-block: 7px; }
+.app-store-button { min-width: 205px; justify-content: flex-start; padding-block: 7px; }
+.app-store-button .apple-logo { width: 23px; height: 29px; }
+.app-store-arrow { margin-left: auto; }
 .store-button-copy { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.05; }
 .store-button-copy small { font-size: 10px; font-weight: 700; letter-spacing: .2px; }
 .store-button-copy strong { font-size: 19px; }
