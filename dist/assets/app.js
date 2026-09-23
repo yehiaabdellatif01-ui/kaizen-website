@@ -129,6 +129,27 @@
     });
   });
 
+  const collaborationTabs = document.querySelectorAll("[data-collaboration-filter]");
+  const collaborationCards = document.querySelectorAll("[data-collaboration-category]");
+  const collaborationEmpty = document.querySelector("[data-collaboration-empty]");
+  collaborationTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const filter = tab.dataset.collaborationFilter;
+      collaborationTabs.forEach((item) => {
+        const active = item === tab;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-selected", String(active));
+      });
+      let visibleCount = 0;
+      collaborationCards.forEach((card) => {
+        const visible = filter === "all" || card.dataset.collaborationCategory === filter;
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+      if (collaborationEmpty) collaborationEmpty.hidden = visibleCount > 0;
+    });
+  });
+
   const form = document.querySelector("[data-contact-form]");
   if (form) {
     form.addEventListener("submit", (event) => {
